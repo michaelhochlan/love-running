@@ -17,7 +17,7 @@ when we go to position our elements within a design.*/
 body {
     font-family: lato, sans-serif;
     font-weight: 300;
-    font-color: #3a3a3a;
+    color: #3a3a3a;
 }
 
 /* heading and logo */
@@ -38,12 +38,37 @@ h2 {
 /* navigation links */
 
 #menu {
-  font-size: 110%;
-  letter-spacing: 4px;  
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu,
+#logo {
+    line-height: 75px;
+
 }
 
 #menu li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
+}
+
+/* removes the underlines from all child's (a) */
+
+#menu a {
+    text-decoration: none;
+
+    /* "inherit" allows the link to inherit the color from
+    the closest parent */
+
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
